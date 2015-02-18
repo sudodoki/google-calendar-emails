@@ -1,0 +1,40 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.error {
+  color: red;
+}
+.loader {
+  font-family: monospace;
+ -webkit-animation: rotation 2s infinite linear;
+ animation: rotation 2s infinite linear;
+}
+@-webkit-keyframes rotation {
+    from {-webkit-transform: rotate(0deg);}
+    to   {-webkit-transform: rotate(359deg);}
+}
+@keyframes rotation {
+    from {-webkit-transform: rotate(0deg);}
+    to   {-webkit-transform: rotate(359deg);}
+} 
+
+.calendar {
+  font-size: 18px;
+  li {
+    line-height: 125%;
+  }
+  .calendar-selected {
+    background-color: #555;
+    color: white;
+  }
+  li:hover {
+    background-color: black;
+    color: white;
+  }
+}
+textarea.big-list {
+  display: block;
+  width: 800px;
+  height: 300px;
+}
